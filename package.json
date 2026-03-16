@@ -1,0 +1,12 @@
+{
+  "name": "cf-ai-network-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered networking assistant built on Cloudflare Workers AI + Durable Objects",
+  "scripts": {
+    "dev":    "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

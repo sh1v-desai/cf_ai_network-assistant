@@ -1,0 +1,22 @@
+name = "cf-ai-network-assistant"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# workers ai binding
+[ai]
+binding = "AI"
+
+# durable objects binding
+[[durable_objects.bindings]]
+name       = "CHAT_SESSION"
+class_name = "ChatSession"
+
+# durable object migration
+[[migrations]]
+tag             = "v1"
+new_classes     = ["ChatSession"]
+
+# static assets (frontend)
+[assets]
+directory = "./public"
